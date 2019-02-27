@@ -23,4 +23,4 @@ Until 3 containers are up. Continue the next step.
 4. Create your admin account
 5. You'll redirected to login page, use your admin account to login
 6. Add a new connection, give the name and admin url `http://kong:8001/`
-7. Start config Kong on KongA. At the second login, you don't need to do 1,2,3,4 above.
+7. Start config Kong on KongA. At the second login, you don't need to do steps above.
