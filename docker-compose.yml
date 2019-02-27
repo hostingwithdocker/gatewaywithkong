@@ -26,7 +26,7 @@ services:
       KONG_PG_DATABASE: ${POSTGRES_DB:-kong}
       KONG_PG_PASSWORD: ${POSTGRES_PASSWORD:-kong}
       KONG_PG_USER: ${POSTGRES_USER:-kong}
-    command: kong migrations up
+    command: kong migrations bootstrap
     depends_on:
       - kong-database
     restart: on-failure
