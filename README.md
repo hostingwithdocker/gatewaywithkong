@@ -9,7 +9,7 @@ This repo contains script to deploy Kong API Gateway on you server
 3. Remember to set the variable `KONGA_ENV=development` to init Konga database
 4. Run `docker-compose up -d`
 5. Check `docker-compose ps`.
-If there is less than 3 containers up, then run `docker-compose down` and up again. 
+If there are less than 3 containers up, then run `docker-compose down` and up again. 
 If 3 container are up. Continue the next step.
 6. Wait a moment then down the stack: `docker-compose down` then you done the installation.
 
