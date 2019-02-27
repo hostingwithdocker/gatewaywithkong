@@ -71,7 +71,7 @@ services:
     image: pantsel/konga:${KONGA_VERSION:-next}
     container_name: ${STACK_PREFIX:-kongstack}konga
     environment:
-      NODE_ENV: production
+      NODE_ENV: ${KONGA_ENV:-production}
       TOKEN_SECRET: ${KONGA_TOKEN_SECRET}
       DB_ADAPTER: postgres
       DB_HOST: kong-database
