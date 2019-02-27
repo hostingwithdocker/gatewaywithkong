@@ -10,7 +10,7 @@ This repo contains script to deploy Kong API Gateway on you server
 4. Run `docker-compose up -d`
 5. Check `docker-compose ps`.
 If there are less than 3 containers up, then run `docker-compose down` and up again. 
-If 3 container are up. Continue the next step.
+Until 3 containers are up. Continue the next step.
 6. Wait a moment then down the stack: `docker-compose down` then you done the installation.
 
 > If you meet any problems, let remove the directory `/postgres` the repeat the step 1
