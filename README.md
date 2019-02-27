@@ -13,7 +13,7 @@ If there are less than 3 containers up, then run `docker-compose down` and up ag
 Until 3 containers are up. Continue the next step.
 6. Wait a moment then down the stack: `docker-compose down` then you done the installation.
 
-> If you meet any problems, let remove the directory `/postgres` the repeat the step 1
+> If you meet any problems, let remove the directory `/postgres` before start again at step 1
 
 ## First login to Konga - a Kong GUI
 
