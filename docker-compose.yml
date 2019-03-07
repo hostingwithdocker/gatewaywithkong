@@ -79,7 +79,11 @@ services:
       DB_USER: ${POSTGRES_USER:-kong}
       DB_PASSWORD: ${POSTGRES_PASSWORD:-kong}
       DB_DATABASE: ${KONGA_DB:-konga_db}
-      DB_PG_SCHEMA: konga-schema      
+      DB_PG_SCHEMA: konga-schema
+      SSL_KEY_PATH: /cert/server.key
+      SSL_CRT_PATH: /cert/server.crt
+    volumes:
+      - ./cert:/cert
     depends_on:
       - kong-database
       - kong
