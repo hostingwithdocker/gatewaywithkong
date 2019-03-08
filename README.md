@@ -1,6 +1,6 @@
 # API Gateway with Kong
 
-This repo contains script to deploy Kong API Gateway on you server
+This repo contains script to deploy Kong API Gateway on you server.
 
 ## Install
 
@@ -25,3 +25,16 @@ Until 3 containers are up. Continue the next step
 6. Add a new connection, give the name and admin url `http://kong:8001/`
 7. Start config Kong on KongA
 8. At the second login, you don't need to do steps above
+
+## Explain the stack
+
+### Components and words:
+
+#### 1. The API Gateway 
+The API Gateway takes all the requests from the clients, then routes them to the appropriate microservice with request routing, composition, and protocol translation. Typically it handles a request by invoking multiple microservices and aggregating the results, to determine the best path. It can translate between web protocols and web-unfriendly protocols that are used internally. ([more](https://www.nginx.com/learn/api-gateway/))
+
+#### 2. Kong 
+Kong is deployed on top of reliable technologies like NGINX and Apache Cassandra or PostgreSQL, and provides you with an easy-to-use RESTful API to operate and configure the system. Once Kong is running, every client request being made to the API will hit Kong first and then be proxied to the final API. In between requests and responses Kong will execute any installed plugins, extending the API feature set. Kong effectively becomes the entry point for every API request. ([more](https://konghq.com/solutions/gateway/))
+
+#### 3. Konga
+An Elegant Kong GUI, open source tool that enables you to manage your Kong API Gateway with ease ([more](https://pantsel.github.io/konga/)). The original Kong Api Gateway works with an Admin RESTful API. It has no native UI to interact with, but there is an Enterprise UI tool you can paid alternatively Konga.
