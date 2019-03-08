@@ -28,7 +28,7 @@ Until 3 containers are up. Continue the next step
 
 ## Explain the stack
 
-### Components and words:
+### Components and words
 
 #### 1. The API Gateway 
 The API Gateway takes all the requests from the clients, then routes them to the appropriate microservice with request routing, composition, and protocol translation. Typically it handles a request by invoking multiple microservices and aggregating the results, to determine the best path. It can translate between web protocols and web-unfriendly protocols that are used internally. ([more](https://www.nginx.com/learn/api-gateway/))
