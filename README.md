@@ -40,7 +40,7 @@ Kong is deployed on top of reliable technologies like NGINX and Apache Cassandra
 An Elegant Kong GUI, open source tool that enables you to manage your Kong API Gateway with ease ([more](https://pantsel.github.io/konga/)). The original Kong Api Gateway works with an Admin RESTful API. It has no native UI to interact with, but there is an Enterprise UI tool you can paid alternatively Konga.
 
 ### Take a look on the file docker-compose.yml
-There are 4 parts as known as services inside:
+There are 5 parts as known as services inside:
 
 #### 1. kong-database
 In this part, we use Postgres for database. In the environment declarations, we need to set the default user and password, which we also use for the setting of Kong and Konga. Postgres has an utility for health-check, which is called `pg_isready`. Three most significant configs:
