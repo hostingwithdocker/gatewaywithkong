@@ -84,7 +84,7 @@ Konga need a ready db structure to work with. Just same as `kong-prepare` above,
 
 #### 5. konga
 Lastly, we have to install `konga` for management of Kong's configuration. This service depends on `kong-database` and `kong`. You have to list them inside docker-compose.yml. There are needed configs:
-  - NODE_ENV: "production" or "development"
+  - NODE_ENV: "production" or "development". Use "development" value at the first time of running Kong to generate the database structure. After installation succeeded, change the value to "production" Konga won't regenerate database again.
   - TOKEN_SECRET: random string
   - DB_ADAPTER: "postgres" or "mysql"
   - DB_HOST: "kong-database" is the name of database service above. Just use service name, no IP or container name.
