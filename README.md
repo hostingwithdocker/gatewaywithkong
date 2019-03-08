@@ -102,7 +102,7 @@ Keep in mind, ssl key path here is the internal path inside the container, so yo
       - ./cert:/cert
   ```
 
-You're free to edit this setting  by your self. Make it online by commands:
+You're free to edit this setting  by your self. Remember, you should overwrite the config value in the environment file `.env` rather than directly change the file `docker-compose.yml`.  Make it online by commands:
 
   ```bash
   # start the stack
